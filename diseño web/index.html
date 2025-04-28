@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portfolio - Juliana Eva Fernandez</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <ul>
+        <li><a class="nav-link active" href="#home">Inicio</a></li>
+        <li><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li><a class="nav-link" href="#portfolio">Portafolio</a></li>
+        <li><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- TITULO -->
+  <div class="titulo">
+    <h1>¡Hola! Soy Juliana Eva Fernandez</h1>
+    <p>
+      Me encanta explorar diferentes áreas del conocimiento y siempre estoy buscando aprender algo nuevo.
+      Actualmente estudio Sistemas en la UNNE. A lo largo de los años, he tomado diversos cursos en áreas variadas.
+      ¡Nunca dejo de aprender y mejorar!
+    </p>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <figure>
+      <img src="kittybrillo.jpg" alt="Foto de Hk con brillo" />
+    </figure>
+
+    <div class="card">
+      <h1>Bienvenido a mi Portfolio</h1>
+      <p>Explora mis habilidades</p>
+    </div>
+
+    <div class="card">
+      <img src="analisis.jpg" alt="Imagen representando cursos realizados" />
+      <h3>Cursos</h3>
+      <p>He tomado cursos como panadería, bartender, técnica de uñas y análisis de datos.</p>
+    </div>
+
+    <div class="card">
+      <img src="cc.webp" alt="Próximo contenido" />
+      <h3>Lenguajes de Programación</h3>
+      <p>Actualmente he aprendido a programar en cc y ahora estoy aprendiendo en Sublime text</p>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Siempre he tenido una gran curiosidad por lo digital, pero mi vida no se limita solo a la tecnología.
+      Me apasiona el anime, el K-pop, los videojuegos y aprender cosas nuevas.
+      Mis estudios en Sistemas me permiten combinar creatividad con tecnología.
+    </p>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portfolio">
+    <h2>PORTAFOLIO</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="maquillaje.jpg" alt="Maquillaje profesional" />
+        <p>Trabajar en el mundo del maquillaje</p>
+      </div>
+      <div class="gallery-item">
+        <img src="kitty fuego.jpg" alt="Programación" />
+        <p>Programar y conocer nuevos lenguajes</p>
+      </div>
+      <div class="gallery-item">
+        <img src="manos.jpg" alt="manicura" />
+        <p>Trabajar en el area de semipermanentes y acrilicas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 - Mi Portfolio. Diseñado por Juliana Eva Fernandez.</p>
+  </footer>
+
+</body>
+
+</html>
