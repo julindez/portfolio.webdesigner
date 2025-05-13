@@ -5,23 +5,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi Portfolio - Juliana Eva Fernandez</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet" />
+
+  <!-- Scroll suave -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- NAVBAR -->
   <header>
-    <nav>
-      <ul>
-        <li><a class="nav-link active" href="#home">Inicio</a></li>
-        <li><a class="nav-link" href="#about">Sobre mí</a></li>
-        <li><a class="nav-link" href="#portfolio">Portafolio</a></li>
-        <li><a class="nav-link" href="#contact">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e087b9;">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Juliana</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -38,7 +72,7 @@
   <!-- HERO -->
   <section id="home" class="hero">
     <figure>
-      <img src="kittybrillo.jpg" alt="Foto de Hk con brillo" />
+      <img src="kittybrillo.jpg" alt="Foto de Hk con brillo" class="img-fluid" />
     </figure>
 
     <div class="card">
@@ -47,15 +81,15 @@
     </div>
 
     <div class="card">
-      <img src="analisis.jpg" alt="Imagen representando cursos realizados" />
+      <img src="analisis.jpg" alt="Imagen representando cursos realizados" class="img-fluid" />
       <h3>Cursos</h3>
       <p>He tomado cursos como panadería, bartender, técnica de uñas y análisis de datos.</p>
     </div>
 
     <div class="card">
-      <img src="cc.webp" alt="Próximo contenido" />
+      <img src="cc.webp" alt="Próximo contenido" class="img-fluid" />
       <h3>Lenguajes de Programación</h3>
-      <p>Actualmente he aprendido a programar en cc y ahora estoy aprendiendo en Sublime text</p>
+      <p>Actualmente he aprendido a programar en C y ahora estoy aprendiendo en Sublime Text.</p>
     </div>
   </section>
 
@@ -72,43 +106,53 @@
   <!-- PORTAFOLIO -->
   <section id="portfolio">
     <h2>PORTAFOLIO</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="maquillaje.jpg" alt="Maquillaje profesional" />
+    <div class="gallery row">
+      <div class="gallery-item col-lg-4 col-md-6 col-sm-12">
+        <img src="maquillaje.jpg" alt="Maquillaje profesional" class="img-fluid" />
         <p>Trabajar en el mundo del maquillaje</p>
       </div>
-      <div class="gallery-item">
-        <img src="kitty fuego.jpg" alt="Programación" />
+      <div class="gallery-item col-lg-4 col-md-6 col-sm-12">
+        <img src="kitty fuego.jpg" alt="Programación" class="img-fluid" />
         <p>Programar y conocer nuevos lenguajes</p>
       </div>
-      <div class="gallery-item">
-        <img src="manos.jpg" alt="manicura" />
-        <p>Trabajar en el area de semipermanentes y acrilicas</p>
+      <div class="gallery-item col-lg-4 col-md-6 col-sm-12">
+        <img src="manos.jpg" alt="Manicura" class="img-fluid" />
+        <p>Trabajar en el área de semipermanentes y acrílicas</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACTO -->
   <section id="contact">
-    <h2>Contacto</h2>
+    <h2><i class="bi bi-envelope-fill"></i> Contacto</h2>
     <form>
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required />
+      <input type="text" id="nombre" name="nombre" class="form-control" required aria-label="Nombre completo" />
 
       <label for="correo">Correo:</label>
-      <input type="email" id="correo" name="correo" required />
+      <input type="email" id="correo" name="correo" class="form-control" required aria-label="Correo electrónico" />
 
       <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <textarea id="mensaje" name="mensaje" rows="5" class="form-control" required aria-label="Mensaje"></textarea>
 
-      <button type="submit">Enviar</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 - Mi Portfolio. Diseñado por Juliana Eva Fernandez.</p>
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p><i class="bi bi-c-circle"></i> 2025 - Mi Portfolio. Diseñado por Juliana Eva Fernandez.</p>
+      <!-- Link a Instagram -->
+      <a href="https://www.instagram.com/juli.ndez" class="text-white" target="_blank">
+        <i class="bi bi-instagram"></i> Instagram
+      </a>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 </body>
 
